@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Socket Chat Client</title>
+	<link href="/bootstrap_css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<style>
+		.card {
+			width: 100%;
+		}
+		.bottom-space {
+			margin-top: 85px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="output" class="row"></div>
+	</div>
+	<div class="container">
+		<div class="bottom-space">
+
+		</div>
+	</div>
+	<div class="container fixed-bottom bg-dark">
+		<div class="row">
+			<div class="col-12">
+				<form id="message-form">
+					<div class="input-group my-3">
+						<input id="message" type="text" class="form-control" placeholder="Type message here">
+						<div class="input-group-append">
+							<button id="send" class="btn btn-success" type="submit">Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="/jquery/jquery.min.js"></script>
+	<script src="/socket_io/socket.io.js"></script>
+	<script src="/script.js"></script>
+</body>
+</html>
